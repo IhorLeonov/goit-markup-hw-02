@@ -1,0 +1,63 @@
+/* Cелектор, який дозволяє вибрати тільки безпосередню дитину 
+всередині батьківського елементу */
+.menu > li {
+  border: 1px solid tomato;
+}
+
+/* Застосує стилі до всіх елементів, у яких є вказаний атрибут. */
+a[title] {
+  color: teal;
+}
+
+/* Вибере всі посилання з атрибутом href і відповідним значенням. */
+a[href="https://cssreference.io"]
+{
+  color: orange;
+}
+
+.social-links .link {
+  color: teal;
+}
+
+.social-links .link:hover,
+.social-links .link:focus {
+  color: orange;
+}
+
+.social-links .link:active {
+  color: red;
+}
+
+.social-links .link:visited {
+  color: green;
+}
+
+.schedule-body > tr:hover {
+  background-color: tomato;
+  color: white;
+}
+
+/* Оформлення таблиці */
+.schedule {
+  border-collapse: collapse;
+}
+
+.schedule th,
+.schedule td {
+  padding: 8px;
+  border: 1px solid #212121;
+}
+
+.progress {
+  cursor: progress;
+}
+
+.post-text {
+  text-indent: 100px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Tangerine', cursive;
+}
