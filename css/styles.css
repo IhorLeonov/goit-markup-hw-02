@@ -182,6 +182,10 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+.contact-adress-list .adress-link:hover,
+.contact-adress-list .adress-link:focus {
+  color: var(--primery-accent-color);
+}
 .contact-adress-list .link {
   font-family: 'Roboto';
   font-style: normal;
