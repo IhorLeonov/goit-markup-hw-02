@@ -28,7 +28,7 @@ body {
   color: #000000;
 }
 /* NAVIGATION */
-.main-nav .link {
+.nav-link {
   color: var(--primery-title-color);
   font-family: 'Roboto';
   font-style: normal;
@@ -38,15 +38,15 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.main-nav .link:hover,
-.main-nav .link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--primery-accent-color);
 }
-.list .link.current {
+.nav-link.current {
   color: var(--primery-accent-color);
 }
 /* Contacts */
-.contact-list .link {
+.contact-link {
   color: var(--primery-text-color);
   font-family: 'Roboto';
   font-style: normal;
@@ -56,43 +56,9 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.contact-list .link:hover,
-.contact-list .link:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--primery-accent-color);
-}
-/* Кнопки */
-.button {
-  cursor: pointer;
-}
-.button.primary {
-  color: var(--primery-white-color);
-  background-color: var(--primery-accent-color);
-  width: 216px;
-  height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-width: 0px;
-}
-.button.primary:hover,
-.button.primary:focus,
-.button.primary:active {
-  color: var(--primery-title-color);
-  background: #f5f4fa;
-}
-.button.secondary {
-  color: var(--primery-title-color);
-  background: #f5f4fa;
-  border-radius: 4px;
-  height: 38px;
-  border-width: 0px;
-}
-.button.secondary:hover,
-.button.secondary:focus,
-.button.secondary:active {
-  color: var(--primery-white-color);
-  background-color: var(--primery-accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Hero section */
 .main-section {
@@ -109,6 +75,26 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+/* Кнопки */
+.button {
+  cursor: pointer;
+}
+.button.primary {
+  color: var(--primery-white-color);
+  background-color: var(--primery-accent-color);
+  width: 216px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0px;
+  font-family: inherit;
+}
+.button.primary:hover,
+.button.primary:focus,
+.button.primary:active {
+  color: var(--primery-title-color);
+  background: #f5f4fa;
+}
 /* SECTION */
 .section-title {
   color: var(--primery-title-color);
@@ -121,7 +107,7 @@ body {
   letter-spacing: 0.03em;
 }
 /* Our benefits */
-.benefits-list .title {
+.benefits-title {
   color: var(--primery-title-color);
   font-family: 'Roboto';
   font-style: normal;
@@ -131,14 +117,14 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.benefits-list .desc {
+.benefits-desc {
   font-family: 'Roboto';
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
 }
 /* Наша команда */
-.team-list .title {
+.team-title {
   color: var(--primery-title-color);
   font-family: 'Roboto';
   font-style: normal;
@@ -148,7 +134,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-list .desc {
+.team-desc {
   font-family: 'Roboto';
   font-size: 16px;
   line-height: 19px;
@@ -159,7 +145,24 @@ body {
   background: #f5f4fa;
 }
 /* Portfolio */
-.potfolio-list .title {
+/* Filter-section */
+.button.secondary {
+  color: var(--primery-title-color);
+  background: #f5f4fa;
+  border-radius: 4px;
+  height: 38px;
+  border-width: 0px;
+  font-family: inherit;
+}
+.button.secondary:hover,
+.button.secondary:focus,
+.button.secondary:active {
+  color: var(--primery-white-color);
+  background-color: var(--primery-accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.potfolio-title {
   color: var(--primery-title-color);
   font-family: 'Roboto';
   font-style: normal;
@@ -168,7 +171,7 @@ body {
   line-height: 36px;
   letter-spacing: 0.06em;
 }
-.list-item .work-desc {
+.potfolio-desc {
   font-family: 'Roboto';
   font-size: 16px;
   line-height: 30px;
@@ -178,7 +181,7 @@ body {
 .contact-adress {
   background: #2f303a;
 }
-.contact-adress-list .adress-link {
+.adress-link {
   color: var(--primery-white-color);
   font-family: 'Roboto';
   font-style: normal;
@@ -188,21 +191,28 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.contact-adress-list .adress-link:hover,
-.contact-adress-list .adress-link:focus {
+.adress-link:hover,
+.adress-link:focus {
   color: var(--primery-accent-color);
 }
-.contact-adress-list .link {
+.contact-adress-link {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
-.contact-adress-list .link:hover,
-.contact-adress-list .link:focus {
+.contact-adress-link:hover,
+.contact-adress-link:focus {
   color: var(--primery-accent-color);
 }
+
+/* .reset  */
+.reset {
+  text-decoration: none;
+  color: currentColor;
+}
+/* убрать жирный с заголовков */
