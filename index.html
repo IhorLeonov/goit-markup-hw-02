@@ -5,43 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="page">
     <!--Шапка-->
     <header class="header">
       <nav class="nav">
-        <a class="logo" href="./index.html">Web<span class="logo-color">Studio</span></a>
-        <ul class="list">
-          <li class="nav-item"><a class="nav-link current" href="./index.html">Студія</a></li>
-          <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacts">Контакти</a></li>
+        <a class="logo link" href="./index.html">Web<span class="logo-color">Studio</span></a>
+        <ul class="nav-list list">
+          <li class="nav-item"><a class="nav-link current link" href="./index.html">Студія</a></li>
+          <li class="nav-item"><a class="nav-link link" href="./portfolio.html">Портфоліо</a></li>
+          <li class="nav-item"><a class="nav-link link" href="#contacts">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="contact-list">
+      <ul class="contact-list list ">
         <li class="contact-list-item"
-          ><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li
+          ><a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li
         >
         <li class="contact-list-item"
-          ><a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a></li
+          ><a class="contact-link link" href="tel:+380961111111">+38 096 111 11 11</a></li
         >
       </ul>
     </header>
     <!--Основна інформація-->
     <main>
       <!--Hero section-->
-      <section class="main-section">
-        <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
+      <section class="hero-section">
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="button primary" type="button">Замовити послугу</button>
       </section>
       <section class="benefits">
         <!--Our benefits-->
         <h2 hidden class="section-title">Наші особливості</h2>
-        <ul class="benefits-list">
+        <ul class="benefits-list list">
           <li class="benefits-list-item">
             <h3 class="benefits-title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="benefits-desc"
@@ -70,8 +74,8 @@
       </section>
       <!-- Чим ми займаємося -->
       <section class="work-section">
-        <h2 class="section-title">Чим ми займаємося</h2>
-        <ul class="work-list">
+        <h2 class="work-title">Чим ми займаємося</h2>
+        <ul class="work-list list">
           <li class="list-item"
             ><img
               class="work-img"
@@ -100,8 +104,8 @@
       </section>
       <!-- Наша комманда -->
       <section class="team-section">
-        <h2 class="section-title">Наша команда</h2>
-        <ul class="team-list">
+        <h2 class="team-title">Наша команда</h2>
+        <ul class="team-list list">
           <li class="list-item"
             ><img
               class="team-img"
@@ -109,7 +113,7 @@
               alt="Ігор Дем'яненко"
               width="270"
               height="260"
-            /><h3 class="team-title">Ігор Дем'яненко</h3
+            /><h3 class="team-name">Ігор Дем'яненко</h3
             ><p class="team-desc" lang="en">Product Designer</p></li
           >
           <li class="list-item"
@@ -119,7 +123,7 @@
               alt="Ольга Рєпіна"
               width="270"
               height="260"
-            /><h3 class="team-title">Ольга Рєпіна</h3
+            /><h3 class="team-name">Ольга Рєпіна</h3
             ><p class="team-desc" lang="en">Frontend Developer</p></li
           >
           <li class="list-item"
@@ -129,7 +133,7 @@
               alt="Микола Тарасов"
               width="270"
               height="260"
-            /><h3 class="team-title">Микола Тарасов</h3
+            /><h3 class="team-name">Микола Тарасов</h3
             ><p class="team-desc" lang="en">Marketing</p></li
           >
           <li class="list-item"
@@ -139,7 +143,7 @@
               alt="Михайло Єрмаков"
               width="270"
               height="260"
-            /><h3 class="team-title">Михайло Єрмаков</h3
+            /><h3 class="team-name">Михайло Єрмаков</h3
             ><p class="team-desc" lang="en">UI Designer</p></li
           >
         </ul>
@@ -147,12 +151,12 @@
     </main>
     <!--Підвал-->
     <footer>
-      <a class="logo" href="./index.html">Web<span class="footer-logo-color">Studio</span></a>
+      <a class="logo link" href="./index.html">Web<span class="footer-logo-color">Studio</span></a>
       <address class="contact-adress" id="contacts">
-        <ul class="contact-adress-list"
+        <ul class="contact-adress-list list"
           ><li class="adress-item">
             <a
-              class="adress-link"
+              class="adress-link link"
               href="https://goo.gl/maps/P9MRE7Qx5uQHdHFFA"
               target="_blank"
               rel="noopener noreferrer"
@@ -160,12 +164,12 @@
             ></li
           >
           <li class="contact-adress-item"
-            ><a class="contact-adress-link" href="mailto:info@devstudio.com"
+            ><a class="contact-adress-link link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             ></li
           >
           <li class="contact-adress-item"
-            ><a class="contact-adress-link" href="tel:+380961111111">+38 096 111 11 11</a></li
+            ><a class="contact-adress-link link" href="tel:+380961111111">+38 096 111 11 11</a></li
           >
         </ul>
       </address>
